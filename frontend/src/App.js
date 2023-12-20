@@ -8,7 +8,7 @@ function App() {
 
   const searchProfile = async (username) => {
     try {
-      const response = await axios.get(`http://localhost:5000/github-profiles/${username}`);
+      const response = await axios.get(`http://localhost:3000/github-profiles/${username}`);
       setUserData(response.data);
     } catch (error) {
       console.error('Error fetching user data:', error);
